@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIA</title>
+    <!-- 필수는 og 태그 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jibdolti.github.io" />
+    <meta property="og:title" content="기아 - Movement that inspires" />
+    <meta property="og:image" content="images/kia_logo_og.jpg" />
+    <meta
+      property="og:description"
+      content="기아 공식 사이트에 오신 것을 환영합니다. 승차감 좋고 연비 좋은 기아의 승용, RV, 하이브리드의 다양한 라인업 및 사진, 제원을 확인 하세요."
+    />
+    <meta property="og:site_name" content="KIA" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+  </head>
+  <body>
+    <header class="header_sub">
+      <!-- header.html 자리 -->
+    </header>
+
+    <div id="visual_sub">
+      <div class="centerbox1200">
+        <div class="sub_text">체험</div>
+        <div class="bread">
+          <a href="index.html">HOME</a>
+          <span> > </span>
+          <a href="sub03_02.html">오시는길</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="section_box_sub">
+      <h2>
+        오시는길
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+      </h2>
+
+      <nav class="snb">
+        <div class="centerbox1200">
+          <ul>
+            <li><a href="#">시승신청</a></li>
+            <li class="on"><a href="sub03_02.html">오시는길</a></li>
+          </ul>
+          <span class="snb_line"></span>
+        </div>
+      </nav>
+      <article class="content direction">
+        <div class="centerbox1200">
+          <div class="direct_box">
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div
+              id="daumRoughmapContainer1722997623810"
+              class="root_daum_roughmap root_daum_roughmap_landing"
+              style="width: 100%;"
+            ></div>
+
+            <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+            <script
+              charset="UTF-8"
+              class="daum_roughmap_loader_script"
+              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+            ></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+              new daum.roughmap.Lander({
+                timestamp: "1722997623810",
+                key: "2ka6d",
+                mapWidth: "",
+                mapHeight: "360",
+              }).render();
+            </script>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <footer>
+      <!-- footer.html 자리 -->
+    </footer>
+
+    <div class="floating_menu sub">
+      <a href="#section1">
+        <i class="fa-solid fa-car" style="color: #ffffff"></i>
+        <span>The New Seltos</span>
+      </a>
+      <a href="#section2">
+        <i class="fa-solid fa-fire-flame-curved" style="color: #ffffff"></i>
+        <span>Brand Story</span>
+      </a>
+      <a href="#section3">
+        <i class="fa-solid fa-circle-question" style="color: #ffffff"></i>
+        <span>시승후기</span>
+      </a>
+      <a href="#visual">
+        <i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
+        <span>TOP</span>
+      </a>
+    </div>
+
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/action.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".section2Slide", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 3, //브라우저가 768보다 클 때
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50, //브라우저가 1024보다 클 때
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
