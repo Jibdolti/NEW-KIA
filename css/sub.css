@@ -184,6 +184,15 @@ header.header_sub nav .spotmenu a:hover { color: #5ca4df; }
 .water-motion,
 .architecture { grid-column: span 1; } 
 
+/* Our Inspiration */
+.night-sky p.korean-text4 { top: 35%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 80%; font-size: 70px; font-family: "Pretendard-SemiBold"; } 
+
+.night-sky .sub-text4 { top: 70%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 80%; font-size: 28px; font-family: "Pretendard-Light"; line-height: 40px; } 
+
+.night-sky p.korean2-text4 { top: 40%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 80%; font-size: 55px; font-family: "Pretendard-Bold";} 
+
+.night-sky .sub2-text4 { top: 55%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 80%; font-size: 30px; font-family: "Pretendard-SemiBold"; line-height: 3rem; margin-top: 50px; }
+
 /* 차량 구매 페이지 */
 .car-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; } 
 
