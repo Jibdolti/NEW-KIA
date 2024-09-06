@@ -92,8 +92,9 @@ $(document).ready(function () {
         };
     }
 
-    snbLine()  //새로고침때 실행
 
+    snbLine()  //새로고침때 실행
+    
     $(window).resize(function () {
         snbLine()  //화면크기 변경할때 실행
     })
