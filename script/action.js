@@ -91,7 +91,8 @@ $(document).ready(function () {
             $('.snb_line').css({ left: snbLeft, width: snbWidth, top: snbTop + snbHeight });
         };
     }
-    
+
+    snbLine()  //새로고침때 실행
 
     $(window).resize(function () {
         snbLine()  //화면크기 변경할때 실행
@@ -314,8 +315,7 @@ $(document).ready(function () {
             alert('개인정보수집 정책에 동의하셔야 합니다.')
             return false;
         }
-            
-        snbLine()  //새로고침때 실행
+        
     
     })
 
