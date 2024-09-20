@@ -91,8 +91,7 @@ $(document).ready(function () {
             $('.snb_line').css({ left: snbLeft, width: snbWidth, top: snbTop + snbHeight });
         };
     }
-
-
+    
     snbLine()  //새로고침때 실행
     
     $(window).resize(function () {
@@ -316,8 +315,23 @@ $(document).ready(function () {
             alert('개인정보수집 정책에 동의하셔야 합니다.')
             return false;
         }
-        
     
     })
 
-})
+});
+
+// 확대/축소 방지 코드
+document.addEventListener('wheel', function(event) {
+    if (event.ctrlKey) {
+        event.preventDefault();
+    }
+}, { passive: false });
+
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '0')) {
+        event.preventDefault();
+    }
+});
+
+// 페이지 로드 시 기본 배율로 설정
+document.body.style.zoom = "100%"; // 일부 브라우저에서 배율을 강제 설정
